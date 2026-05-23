@@ -1,0 +1,27 @@
+# humanstxt.org — credits for Show Masters Production Logistics marketing site
+# Author: RKOJ-ELENO :: 2026-05-23
+
+/* TEAM */
+  Company: Show Masters Production Logistics
+  Founded: 2002
+  Offices: Orlando, FL  ·  Dallas / Fort Worth, TX
+  Phone: (877) 765-2267
+  Email: Orders@ShowMasters.com
+
+/* SITE */
+  Stack: static HTML5 + CSS3 + vanilla JS (no framework, no build step)
+  Hosting: Railway (https://railway.app)
+  Source: github.com/Sinister-Systems-LLC/showmasters-site
+  Build: NIXPACKS + serve
+  Last update: 2026/05/23
+
+/* IMAGES */
+  Photography: brand-locked AI-assisted generation via nano-banana wrapper
+               (Gemini 2.5 Flash Image) — 24 photos across services, events,
+               shows, cities, blog, and pillars. Each generation matched to a
+               cinematic stage-lit / gold-accent brand spec.
+  US map: amCharts (https://www.amcharts.com/lib/3/maps/svg/usaLow.svg) under
+          their permissive map license.
+
+/* AUTHOR */
+  RKOJ-ELENO

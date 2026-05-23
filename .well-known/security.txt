@@ -1,0 +1,7 @@
+# Author: RKOJ-ELENO :: 2026-05-23
+# Security contact per RFC 9116 (https://securitytxt.org)
+Contact: mailto:Orders@ShowMasters.com
+Contact: tel:+1-877-765-2267
+Expires: 2027-05-23T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://www.showmasters.com/.well-known/security.txt
