@@ -1,0 +1,22 @@
+.tmp/
+.claude/
+node_modules/
+BRANDING/
+MARKETING/
+app-v2/
+PLAN.md
+SECURITY.md
+HOSTING.md
+STACK.md
+CLAUDE.md
+.git/
+.gitignore
+.railwayignore
+*.bak
+*.bak-*
+__pycache__/
+*.pyc
+# Generated PNGs are massive (~70MB). The <picture> wrapper serves WebP first (~97% browser support);
+# PNG fallback covers only legacy browsers. To keep upload small for Railway, ship WebP only and let
+# <picture> degrade gracefully on rare unsupported browsers (image broken instead of falling back to PNG).
+public/img/generated/**/*.png

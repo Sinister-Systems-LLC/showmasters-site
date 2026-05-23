@@ -1,0 +1,26 @@
+{
+  "public": ".",
+  "cleanUrls": false,
+  "trailingSlash": false,
+  "renderSingle": false,
+  "headers": [
+    {
+      "source": "**/*.@(html)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=300, must-revalidate" }
+      ]
+    },
+    {
+      "source": "**/*.@(png|jpg|jpeg|gif|webp|svg|ico)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=2592000, immutable" }
+      ]
+    },
+    {
+      "source": "**/*.@(css|js)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=86400, must-revalidate" }
+      ]
+    }
+  ]
+}
