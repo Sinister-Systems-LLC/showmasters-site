@@ -1894,16 +1894,33 @@ section    { padding: 110px 0; }
 .branch-go {
   font-family: 'Inter', sans-serif;
   font-size: 0.82rem;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 1.5px;
-  color: var(--gold);
+  color: #0A0A0F;
+  background: linear-gradient(135deg, #E8C078 0%, #D4A24A 60%, #9C7126 100%);
   text-transform: uppercase;
   display: inline-flex;
-  border-bottom: 1px solid color-mix(in oklab, var(--gold) 30%, transparent);
-  padding-bottom: 2px;
-  transition: color var(--motion-fast) var(--ease), border-color var(--motion-fast) var(--ease);
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  margin-top: 8px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 232, 184, 0.4);
+  box-shadow: 0 4px 16px -4px rgba(212, 162, 74, 0.4), inset 0 1px 0 rgba(255, 232, 184, 0.4);
+  transition: transform var(--motion-fast) var(--ease), box-shadow var(--motion-fast) var(--ease), background var(--motion-fast) var(--ease);
 }
-.branch-node:hover .branch-go { color: var(--text); border-color: var(--gold); }
+.branch-go > span { transition: transform var(--motion-fast) var(--ease); }
+.branch-node:hover .branch-go {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #FFE8B8 0%, #E8C078 60%, #D4A24A 100%);
+  box-shadow: 0 8px 24px -4px rgba(255, 232, 184, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  border-color: rgba(255, 232, 184, 0.7);
+}
+.branch-node:hover .branch-go > span { transform: translateX(4px); }
+.branch-node:focus-visible .branch-go {
+  outline: 3px solid #FFE8B8;
+  outline-offset: 3px;
+}
 
 .branch-node-left .branch-num { text-align: right; padding-right: 36px; }
 .branch-node-right .branch-num { grid-column: 2; text-align: left; padding-left: 36px; }
