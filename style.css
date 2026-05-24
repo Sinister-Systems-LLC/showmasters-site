@@ -69,6 +69,29 @@ body {
   overflow-x: hidden;
 }
 
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  z-index: 9999;
+  background: var(--gold, #D4A24A);
+  color: #0A0A0F;
+  padding: 10px 16px;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 0.92rem;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  border-radius: 0 0 6px 0;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+  transition: top 180ms ease;
+}
+.skip-link:focus {
+  top: 0;
+  outline: 3px solid #FFE8B8;
+  outline-offset: 2px;
+}
+
 h1, h2, h3, h4 {
   font-family: 'DM Serif Display', Georgia, serif;
   color: var(--text);
