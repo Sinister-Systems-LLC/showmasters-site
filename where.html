@@ -106,8 +106,8 @@
             .smpl-realmap .state:hover   { fill: #E8C078; }
             .smpl-realmap .city-dot      { fill: #FFFFFF; stroke: rgba(10,10,15,0.7); stroke-width: 1.2; pointer-events: none; }
             .smpl-realmap .hub-marker    { cursor: pointer; }
-            .smpl-realmap .hub-star      { fill: #0A0A0F; stroke: #FFE8B8; stroke-width: 1.6; stroke-linejoin: round; }
-            .smpl-realmap .hub-star.is-hq { stroke-width: 2.2; filter: drop-shadow(0 0 6px rgba(255,232,184,0.9)); }
+            .smpl-realmap .hub-star      { fill: #0A0A0F; stroke: none; stroke-linejoin: round; }
+            .smpl-realmap .hub-star.is-hq { /* visual identity unified with non-HQ; data-hub flag still wires clicks */ }
             .smpl-realmap .hub-marker:hover .hub-star { fill: #1A1A22; }
             .smpl-realmap .hub-label     { fill: #0A0A0F; font-family: 'Inter', system-ui, sans-serif; font-weight: 800; letter-spacing: 0.6px; text-transform: uppercase; pointer-events: none; paint-order: stroke; stroke: #FFE8B8; stroke-width: 2.2; }
           </style>
@@ -220,43 +220,43 @@
           <!-- 8 operational hubs (stars + state labels) -->
       <g class="hub-marker">
         <title>CA</title>
-        <polygon class="hub-star" points="216.80,292.80 219.86,301.59 229.16,301.78 221.75,307.41 224.44,316.32 216.80,311.00 209.16,316.32 211.85,307.41 204.44,301.78 213.74,301.59" />
-        <text class="hub-label" x="216.8" y="336.8" text-anchor="middle" style="font-size:18px;">CA</text>
+        <polygon class="hub-star" points="216.80,291.80 220.09,301.27 230.11,301.47 222.13,307.53 225.03,317.13 216.80,311.40 208.57,317.13 211.47,307.53 203.49,301.47 213.51,301.27" />
+        <text class="hub-label" x="216.8" y="337.8" text-anchor="middle" style="font-size:22px;">CA</text>
       </g>
       <g class="hub-marker">
         <title>NV</title>
-        <polygon class="hub-star" points="268.00,276.90 271.06,285.69 280.36,285.88 272.95,291.51 275.64,300.42 268.00,295.10 260.36,300.42 263.05,291.51 255.64,285.88 264.94,285.69" />
-        <text class="hub-label" x="268.0" y="320.9" text-anchor="middle" style="font-size:18px;">NV</text>
+        <polygon class="hub-star" points="268.00,275.90 271.29,285.37 281.31,285.57 273.33,291.63 276.23,301.23 268.00,295.50 259.77,301.23 262.67,291.63 254.69,285.57 264.71,285.37" />
+        <text class="hub-label" x="268.0" y="321.9" text-anchor="middle" style="font-size:22px;">NV</text>
       </g>
       <g class="hub-marker">
         <title>CO</title>
-        <polygon class="hub-star" points="459.50,300.70 462.56,309.49 471.86,309.68 464.45,315.31 467.14,324.22 459.50,318.90 451.86,324.22 454.55,315.31 447.14,309.68 456.44,309.49" />
-        <text class="hub-label" x="459.5" y="344.7" text-anchor="middle" style="font-size:18px;">CO</text>
+        <polygon class="hub-star" points="459.50,299.70 462.79,309.17 472.81,309.37 464.83,315.43 467.73,325.03 459.50,319.30 451.27,325.03 454.17,315.43 446.19,309.37 456.21,309.17" />
+        <text class="hub-label" x="459.5" y="345.7" text-anchor="middle" style="font-size:22px;">CO</text>
       </g>
       <g class="hub-marker" data-hub="dallas">
         <title>TX</title>
-        <polygon class="hub-star is-hq" points="551.30,481.60 555.53,493.78 568.42,494.04 558.15,501.82 561.88,514.16 551.30,506.80 540.72,514.16 544.45,501.82 534.18,494.04 547.07,493.78" />
-        <text class="hub-label" x="551.3" y="535.6" text-anchor="middle" style="font-size:22px;">TEXAS HQ</text>
+        <polygon class="hub-star is-hq" points="551.30,485.60 554.59,495.07 564.61,495.27 556.63,501.33 559.53,510.93 551.30,505.20 543.07,510.93 545.97,501.33 537.99,495.27 548.01,495.07" />
+        <text class="hub-label" x="551.3" y="531.6" text-anchor="middle" style="font-size:22px;">TX</text>
       </g>
       <g class="hub-marker">
         <title>TN</title>
-        <polygon class="hub-star" points="814.20,371.10 817.26,379.89 826.56,380.08 819.15,385.71 821.84,394.62 814.20,389.30 806.56,394.62 809.25,385.71 801.84,380.08 811.14,379.89" />
-        <text class="hub-label" x="814.2" y="415.1" text-anchor="middle" style="font-size:18px;">TN</text>
+        <polygon class="hub-star" points="814.20,370.10 817.49,379.57 827.51,379.77 819.53,385.83 822.43,395.43 814.20,389.70 805.97,395.43 808.87,385.83 800.89,379.77 810.91,379.57" />
+        <text class="hub-label" x="814.2" y="416.1" text-anchor="middle" style="font-size:22px;">TN</text>
       </g>
       <g class="hub-marker">
         <title>LA</title>
-        <polygon class="hub-star" points="714.70,488.30 717.76,497.09 727.06,497.28 719.65,502.91 722.34,511.82 714.70,506.50 707.06,511.82 709.75,502.91 702.34,497.28 711.64,497.09" />
-        <text class="hub-label" x="714.7" y="532.3" text-anchor="middle" style="font-size:18px;">LA</text>
+        <polygon class="hub-star" points="714.70,487.30 717.99,496.77 728.01,496.97 720.03,503.03 722.93,512.63 714.70,506.90 706.47,512.63 709.37,503.03 701.39,496.97 711.41,496.77" />
+        <text class="hub-label" x="714.7" y="533.3" text-anchor="middle" style="font-size:22px;">LA</text>
       </g>
       <g class="hub-marker">
         <title>GA</title>
-        <polygon class="hub-star" points="872.90,435.50 875.96,444.29 885.26,444.48 877.85,450.11 880.54,459.02 872.90,453.70 865.26,459.02 867.95,450.11 860.54,444.48 869.84,444.29" />
-        <text class="hub-label" x="872.9" y="479.5" text-anchor="middle" style="font-size:18px;">GA</text>
+        <polygon class="hub-star" points="872.90,434.50 876.19,443.97 886.21,444.17 878.23,450.23 881.13,459.83 872.90,454.10 864.67,459.83 867.57,450.23 859.59,444.17 869.61,443.97" />
+        <text class="hub-label" x="872.9" y="480.5" text-anchor="middle" style="font-size:22px;">GA</text>
       </g>
       <g class="hub-marker" data-hub="orlando">
         <title>FL</title>
-        <polygon class="hub-star is-hq" points="878.20,533.20 882.43,545.38 895.32,545.64 885.05,553.42 888.78,565.76 878.20,558.40 867.62,565.76 871.35,553.42 861.08,545.64 873.97,545.38" />
-        <text class="hub-label" x="878.2" y="587.2" text-anchor="middle" style="font-size:22px;">ORLANDO HUB</text>
+        <polygon class="hub-star is-hq" points="878.20,537.20 881.49,546.67 891.51,546.87 883.53,552.93 886.43,562.53 878.20,556.80 869.97,562.53 872.87,552.93 864.89,546.87 874.91,546.67" />
+        <text class="hub-label" x="878.2" y="583.2" text-anchor="middle" style="font-size:22px;">FL</text>
       </g>
         </svg>
         <div class="smpl-map-legend" aria-label="Map legend">
