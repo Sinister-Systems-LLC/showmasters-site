@@ -3,6 +3,10 @@
   "cleanUrls": false,
   "trailingSlash": false,
   "renderSingle": false,
+  "directoryListing": false,
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" }
+  ],
   "headers": [
     {
       "source": "**",
