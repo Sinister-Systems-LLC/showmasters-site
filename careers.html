@@ -431,22 +431,6 @@
     </div>
   </footer>
   <script src="script.js"></script>
-  <script>
-    (function () {
-      const f = document.getElementById('applyForm');
-      const s = document.getElementById('applySuccess');
-      if (!f) return;
-      f.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const btn = f.querySelector('.cs-submit');
-        if (btn) { btn.disabled = true; btn.textContent = 'Sending...'; }
-        setTimeout(() => {
-          f.style.display = 'none';
-          if (s) s.style.display = 'block';
-          window.scrollTo({ top: s.offsetTop - 100, behavior: 'smooth' });
-        }, 800);
-      });
-    })();
-  </script>
+  <script src="public/js/forms.js"></script>
 </body>
 </html>
