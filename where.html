@@ -92,11 +92,18 @@
     </div>
   </header>
 
-  <section style="padding: 30px 0 60px;">
+  <section class="where-map-section">
     <div class="container">
-      <div class="lg-card" style="padding: 30px; overflow: hidden; position: relative;">
-        <h2 style="font-family:'DM Serif Display', serif; font-size: clamp(2rem, 4vw, 3rem); text-align: center; margin: 0 0 8px; color: var(--text);">Where We Do It</h2>
-        <p style="font-family:'JetBrains Mono','Courier New',monospace; font-size:0.7rem; letter-spacing:4px; color:var(--gold); font-weight:700; margin-bottom:18px; text-align:center;">CLICK A HUB · SEE SHOWS WE'VE CREWED THERE</p>
+      <div class="lg-card where-map-shell">
+        <header class="where-map-header">
+          <div class="where-map-header-rail" aria-hidden="true">
+            <span class="where-map-header-tick"></span>
+            <span class="where-map-header-coords">30.2672°N · 97.7431°W</span>
+            <span class="where-map-header-tick"></span>
+          </div>
+          <h2 class="where-map-header-title"><span class="where-map-header-kicker">Where</span> we<br/><em>do it</em></h2>
+          <p class="where-map-header-cta">Click a star — see the shows we crewed from that hub.</p>
+        </header>
         <div id="smplMap" class="smpl-map">
           <svg class="smpl-realmap" viewBox="-40 -25 1140 705" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Show Masters US service area map — all 50 states, eight operational hubs">
           <title>Show Masters US service area</title>
@@ -281,45 +288,81 @@
   </section>
   <script src="public/js/interactive-map.js" defer></script>
 
-  <section style="padding: 20px 0 60px;">
+  <section class="where-stat-strip" aria-label="Coverage at a glance">
     <div class="container">
-      <div class="location-grid">
-        <div class="lg-card-hero location-card">
-          <p class="state">Florida Hub</p>
-          <h3 class="city">Orlando, FL</h3>
-          <p class="addr">4906 Patch Road, Orlando, FL 32822</p>
-          <p class="meta">Phone: <a href="tel:+18777652267">(877) 765-2267</a></p>
-          <p class="meta">Email: <a href="mailto:Orders@ShowMasters.com">Orders@ShowMasters.com</a></p>
-          <p class="addr" style="margin-top:18px;"><strong style="color:var(--text);">Primary service area:</strong> Orlando, Kissimmee, Lake Mary, Daytona Beach, Tampa, St. Petersburg, Sarasota, Fort Lauderdale, Miami, Jacksonville, Tallahassee.</p>
+      <div class="where-stat-strip-inner">
+        <div class="where-stat">
+          <span class="where-stat-num">2</span>
+          <span class="where-stat-lbl">Offices<br/><em>FL · TX</em></span>
         </div>
-        <div class="lg-card-hero location-card">
-          <p class="state">Texas HQ</p>
-          <h3 class="city">Dallas, TX</h3>
-          <p class="addr">6340 Lake Worth Boulevard, Fort Worth, TX 76135</p>
-          <p class="meta">Phone: <a href="tel:+18777652267">(877) 765-2267</a></p>
-          <p class="meta">Email: <a href="mailto:Orders@ShowMasters.com">Orders@ShowMasters.com</a></p>
-          <p class="addr" style="margin-top:18px;"><strong style="color:var(--text);">Primary service area:</strong> Dallas, Dallas, Arlington, Plano, Frisco, Austin, San Antonio, Houston, Galveston, Corpus Christi.</p>
+        <div class="where-stat">
+          <span class="where-stat-num">8</span>
+          <span class="where-stat-lbl">Operational<br/><em>hubs</em></span>
+        </div>
+        <div class="where-stat">
+          <span class="where-stat-num">33</span>
+          <span class="where-stat-lbl">States<br/><em>hosted</em></span>
+        </div>
+        <div class="where-stat where-stat-since">
+          <span class="where-stat-num">2002</span>
+          <span class="where-stat-lbl">Crewing<br/><em>since</em></span>
         </div>
       </div>
     </div>
   </section>
 
-  <section>
+  <section class="where-offices">
     <div class="container">
-      <span class="section-tag">National coverage</span>
-      <h2 class="section-headline">Staffed events in<br/><em>33 states and counting.</em></h2>
-      <p class="section-subheadline">We send traveling crew where the show is, including remote, destination, and resort venues. When you've got a venue we haven't touched yet, we'll find local hands or fly our own.</p>
+      <div class="where-offices-grid">
+        <aside class="where-offices-label" aria-hidden="true">
+          <span class="where-offices-tick">02 / OFFICES</span>
+          <h2 class="where-offices-title">Two<br/>front<br/><em>doors.</em></h2>
+        </aside>
+        <article class="where-office-card where-office-fl">
+          <span class="where-office-pin">FL — 28.5°N</span>
+          <p class="state">Florida Hub</p>
+          <h3 class="city">Orlando, FL</h3>
+          <p class="addr">4906 Patch Road, Orlando, FL 32822</p>
+          <p class="meta">Phone: <a href="tel:+18777652267">(877) 765-2267</a></p>
+          <p class="meta">Email: <a href="mailto:Orders@ShowMasters.com">Orders@ShowMasters.com</a></p>
+          <p class="where-office-area">Orlando · Kissimmee · Lake Mary · Tampa · Miami · Jacksonville · Tallahassee</p>
+        </article>
+        <article class="where-office-card where-office-tx">
+          <span class="where-office-pin where-office-pin-hq">TX — HQ · 32.7°N</span>
+          <p class="state">Texas HQ</p>
+          <h3 class="city">Fort Worth, TX</h3>
+          <p class="addr">6340 Lake Worth Boulevard, Fort Worth, TX 76135</p>
+          <p class="meta">Phone: <a href="tel:+18777652267">(877) 765-2267</a></p>
+          <p class="meta">Email: <a href="mailto:Orders@ShowMasters.com">Orders@ShowMasters.com</a></p>
+          <p class="where-office-area">Dallas · Fort Worth · Arlington · Plano · Austin · San Antonio · Houston</p>
+        </article>
+      </div>
+    </div>
+  </section>
 
-      <div class="services-grid">
-        <div class="lg-card service-card"><h3>Florida Markets</h3><p>Orlando &middot; Tampa &middot; Miami &middot; Fort Lauderdale &middot; Jacksonville &middot; Sarasota &middot; St. Pete &middot; Daytona &middot; Naples &middot; Tallahassee</p></div>
-        <div class="lg-card service-card"><h3>Texas Markets</h3><p>Dallas / Dallas &middot; Houston &middot; Austin &middot; San Antonio &middot; El Paso &middot; Corpus Christi &middot; Galveston &middot; Frisco &middot; Plano &middot; Arlington</p></div>
-        <div class="lg-card service-card"><h3>Southeast</h3><p>Atlanta &middot; Nashville &middot; Charlotte &middot; New Orleans &middot; Birmingham</p></div>
-        <div class="lg-card service-card"><h3>Northeast / Mid-Atlantic</h3><p>NYC &middot; Boston &middot; Washington DC &middot; Philadelphia &middot; Baltimore</p></div>
-        <div class="lg-card service-card"><h3>Midwest</h3><p>Chicago &middot; Detroit &middot; Cleveland &middot; Indianapolis &middot; St. Louis &middot; Minneapolis</p></div>
-        <div class="lg-card service-card"><h3>West</h3><p>Las Vegas &middot; Los Angeles &middot; San Francisco &middot; Phoenix &middot; Denver &middot; Seattle &middot; Portland</p></div>
+  <section class="where-reach">
+    <div class="where-reach-marquee" aria-hidden="true">
+      <div class="where-reach-marquee-track">
+        <span>33 states</span><span>·</span><span>8 hubs</span><span>·</span><span>2 offices</span><span>·</span><span>One crew</span><span>·</span><span>Since 2002</span><span>·</span><span>33 states</span><span>·</span><span>8 hubs</span><span>·</span><span>2 offices</span><span>·</span><span>One crew</span><span>·</span><span>Since 2002</span>
+      </div>
+    </div>
+    <div class="container">
+      <div class="where-reach-head">
+        <span class="section-tag">National coverage</span>
+        <h2 class="where-reach-headline">Staffed events in<br/><em>33 states</em> &amp; counting.</h2>
+        <p class="where-reach-sub">Traveling crew where the show is — remote, destination, resort. Venue we haven't touched? We find local hands or fly our own.</p>
+      </div>
+      <div class="where-reach-grid">
+        <div class="where-reach-card where-reach-card-lg"><span class="where-reach-num">FL</span><h3>Florida Markets</h3><p>Orlando · Tampa · Miami · Fort Lauderdale · Jacksonville · Sarasota · St. Pete · Daytona · Naples · Tallahassee</p></div>
+        <div class="where-reach-card where-reach-card-lg"><span class="where-reach-num">TX</span><h3>Texas Markets</h3><p>Dallas · Houston · Austin · San Antonio · El Paso · Corpus Christi · Galveston · Frisco · Plano · Arlington</p></div>
+        <div class="where-reach-card"><span class="where-reach-num">SE</span><h3>Southeast</h3><p>Atlanta · Nashville · Charlotte · New Orleans · Birmingham</p></div>
+        <div class="where-reach-card"><span class="where-reach-num">NE</span><h3>Northeast / Mid-Atlantic</h3><p>NYC · Boston · Washington DC · Philadelphia · Baltimore</p></div>
+        <div class="where-reach-card"><span class="where-reach-num">MW</span><h3>Midwest</h3><p>Chicago · Detroit · Cleveland · Indianapolis · St. Louis · Minneapolis</p></div>
+        <div class="where-reach-card"><span class="where-reach-num">W</span><h3>West</h3><p>Las Vegas · Los Angeles · San Francisco · Phoenix · Denver · Seattle · Portland</p></div>
       </div>
 
-      <div class="text-center mt-60">
+      <div class="where-reach-cta">
+        <p class="where-reach-cta-line">Wherever your show lands — the logistics get handled.</p>
         <a href="contact.html#estimate" class="btn btn-primary btn-large">Get an Estimate</a>
       </div>
     </div>
